@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('../../fonts/CabinetGrotesk_Complete/Fonts/WEB/css/cabinet-grotesk.css');
+
+:root {
+  --background: #ffffff;
+  --foreground: #101110;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #101110;
+    --foreground: #ffffff;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: 'CabinetGrotesk-Variable', Arial, Helvetica, sans-serif;
+}
+
+html{
+  scroll-behavior: smooth;
+}
